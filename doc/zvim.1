@@ -1,0 +1,20 @@
+.\" Process this file with
+.\" groff -man -Tascii zvim.1
+.\"
+.TH ZVIM 1 "October 2016" Linux "User Manuals"
+.SH NAME 
+zvim \- open in vim a raw zlib compressed file
+.SH SYNOPSIS
+.B zvim
+.I file
+.SH DESCRIPTION
+.B zvim
+is essentially a wrapper around a clever hack to decompress raw zlib compressed files.
+Using tar, zip or even gzip to uncompress such a file will fail. The actual hack prepends
+the gzip header to the raw file, and then passes that entire mess into gzip, with the output
+redirected into vim. The utility is limited - you cannot open more than one file, and you
+also cannot pass any options into vim at this time.
+.SH AUTHOR
+Jared Wallace <jared-wallace@us.ibm.com>
+.SH "FURTHER DETAILS"
+https://w3-connections.ibm.com/blogs/sametime-linux/entry/Debugging_the_MCU_A_brief_history_of_compression?lang=en
