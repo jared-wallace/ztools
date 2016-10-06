@@ -1,5 +1,5 @@
 # ztools
-A collection of tools for managing raw zlib compressed files. These include zvim, zgrep and zextract. See manpage for detailed assistance.
+A collection of tools for managing raw zlib compressed files. These include zvim, ibmzgrep and zextract. See manpage for detailed assistance.
 
 ### Installing
 

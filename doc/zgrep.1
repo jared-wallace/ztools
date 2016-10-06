@@ -1,15 +1,15 @@
 .\" Process this file with
-.\" groff -man -Tascii zgrep.1
+.\" groff -man -Tascii ibmzgrep.1
 .\"
-.TH ZGREP 1 "October 2016" Linux "User Manuals"
+.TH IBMZGREP 1 "October 2016" Linux "User Manuals"
 .SH NAME 
 zgrep \- search for a string inside a raw zlib compressed file
 .SH SYNOPSIS
-.B zgrep
+.B ibmzgrep
 .I PATTERN
 .I [FILE...]
 .SH DESCRIPTION
-.B zgrep
+.B ibmzgrep
 is essentially a wrapper around a clever hack to decompress raw zlib compressed files.
 Using tar, zip or even gzip to uncompress such a file will fail. The actual hack prepends
 the gzip header to the raw file, and then passes that entire mess into gzip, with the output
